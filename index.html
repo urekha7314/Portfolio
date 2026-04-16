@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Urekha Yalamanchi — Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">UY<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certs">Certs</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <div class="hero-tag"><span class="dot"></span> Available for internships & collaborations</div>
+      <h1 class="hero-name">
+        Urekha<br/>
+        <span class="outline-text">Yalamanchi</span>
+      </h1>
+      <p class="hero-role">
+        <span class="typewriter" id="typewriter"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-bio">
+        Motivated cybersecurity professional student with a strong interest in ethical hacking and network security. Currently building a BIOS-based theft tracking system while pursuing certifications from BIA and Cisco.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="mailto:urekhayalamanchi@gmail.com" class="btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">CSI</span>
+          <span class="stat-label">Member</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hex-ring">
+        <div class="hex-center">
+          <div class="initials">UY</div>
+        </div>
+        <div class="orbit orbit-1">
+          <div class="orbit-dot" style="--angle:0deg"></div>
+          <div class="orbit-dot" style="--angle:120deg"></div>
+          <div class="orbit-dot" style="--angle:240deg"></div>
+        </div>
+        <div class="orbit orbit-2">
+          <div class="orbit-dot" style="--angle:60deg"></div>
+          <div class="orbit-dot" style="--angle:180deg"></div>
+          <div class="orbit-dot" style="--angle:300deg"></div>
+        </div>
+      </div>
+      <div class="terminal-card">
+        <div class="terminal-bar">
+          <span class="t-dot red"></span>
+          <span class="t-dot yellow"></span>
+          <span class="t-dot green"></span>
+          <span class="t-title">~/urekha $</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="t-prompt">$</span> whoami</p>
+          <p class="t-out">urekha_yalamanchi</p>
+          <p><span class="t-prompt">$</span> cat status.txt</p>
+          <p class="t-out">B.Tech CSE (Cyber Security)</p>
+          <p class="t-out">Jeppiaar University · 2023–2027</p>
+          <p><span class="t-prompt">$</span> nmap --open <span class="t-green">opportunities</span></p>
+          <p class="t-out t-green">PORT OPEN → Internships</p>
+          <p class="t-out t-green">PORT OPEN → Collaborations</p>
+          <p><span class="t-prompt">$</span> <span class="cursor-blink">_</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 01</span>
+        <h2>Technical Arsenal</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-delay="0">
+          <div class="skill-icon">🛡️</div>
+          <h3>Cybersecurity Tools</h3>
+          <div class="skill-tags">
+            <span>Nmap</span>
+            <span>Wireshark</span>
+            <span>Shodan</span>
+            <span>John the Ripper</span>
+            <span>OWASP</span>
+          </div>
+        </div>
+        <div class="skill-card" data-delay="100">
+          <div class="skill-icon">🐧</div>
+          <h3>Systems & Platforms</h3>
+          <div class="skill-tags">
+            <span>Linux</span>
+            <span>OverTheWire</span>
+            <span>BIOS/Firmware</span>
+            <span>Network APIs</span>
+          </div>
+        </div>
+        <div class="skill-card" data-delay="200">
+          <div class="skill-icon">💻</div>
+          <h3>Development</h3>
+          <div class="skill-tags">
+            <span>React</span>
+            <span>TanStack</span>
+            <span>Browser APIs</span>
+            <span>Static Analysis</span>
+          </div>
+        </div>
+        <div class="skill-card" data-delay="300">
+          <div class="skill-icon">🔍</div>
+          <h3>Standards & Practices</h3>
+          <div class="skill-tags">
+            <span>OWASP Top 10</span>
+            <span>SANS</span>
+            <span>RBAC</span>
+            <span>Ethical Hacking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-dark" id="projects">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 02</span>
+        <h2>Projects</h2>
+      </div>
+      <div class="projects-list">
+
+        <div class="project-card featured">
+          <div class="project-num">01</div>
+          <div class="project-info">
+            <div class="project-status ongoing">● Ongoing</div>
+            <h3>BIOS Tracking for Theft Devices</h3>
+            <p>Developing a BIOS-based location tracker using a network card API. The device collects real-time location data and updates a live dashboard for map visualization — a hardware-level anti-theft solution.</p>
+            <div class="project-tech">
+              <span>BIOS</span>
+              <span>Network API</span>
+              <span>Live Dashboard</span>
+              <span>Map Visualization</span>
+            </div>
+          </div>
+          <div class="project-arrow">→</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num">02</div>
+          <div class="project-info">
+            <div class="project-status done">✓ Completed</div>
+            <h3>StegVault — Secure Steganography Suite</h3>
+            <p>A browser-based steganography suite that hides secret messages inside images, audio, and text using LSB encoding and zero-width characters. Runs entirely in the browser for privacy with drag-and-drop upload, decoding, copy and download features.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>TanStack</span>
+              <span>LSB Encoding</span>
+              <span>Browser APIs</span>
+            </div>
+          </div>
+          <div class="project-arrow">→</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num">03</div>
+          <div class="project-info">
+            <div class="project-status done">✓ Completed</div>
+            <h3>Secure Code Review Tool</h3>
+            <p>A modular framework for multi-language code reviews with integrated static analysis and vulnerability scanning based on OWASP and SANS standards. Includes version control automation, RBAC, and visual reporting dashboards.</p>
+            <div class="project-tech">
+              <span>Static Analysis</span>
+              <span>OWASP</span>
+              <span>SANS</span>
+              <span>RBAC</span>
+            </div>
+          </div>
+          <div class="project-arrow">→</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTS & ACHIEVEMENTS -->
+  <section class="section" id="certs">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 03</span>
+        <h2>Certifications & Achievements</h2>
+      </div>
+      <div class="two-col">
+        <div class="certs-col">
+          <h3 class="col-title">Certifications</h3>
+          <div class="cert-item">
+            <div class="cert-icon">🏅</div>
+            <div>
+              <p class="cert-name">Certified Ethical Hacking & Cybersecurity</p>
+              <p class="cert-issuer">Boston Institute of Analytics (BIA)</p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon">🏅</div>
+            <div>
+              <p class="cert-name">Introduction to Cyber Security</p>
+              <p class="cert-issuer">Cisco</p>
+            </div>
+          </div>
+          <div class="cert-item ongoing-cert">
+            <div class="cert-icon">🔄</div>
+            <div>
+              <p class="cert-name">Networking Basics</p>
+              <p class="cert-issuer">Cisco · In Progress</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="achievements-col">
+          <h3 class="col-title">Achievements & Activities</h3>
+          <div class="achievement-item">
+            <div class="ach-line"></div>
+            <p>State Level Confluence at PSG Tech, Coimbatore</p>
+          </div>
+          <div class="achievement-item">
+            <div class="ach-line"></div>
+            <p>Cyber Security Workshop at VIT</p>
+          </div>
+          <div class="achievement-item">
+            <div class="ach-line"></div>
+            <p>Active CSI Member — Organizing technical events & workshops</p>
+          </div>
+          <div class="achievement-item">
+            <div class="ach-line"></div>
+            <p>Practicing on OverTheWire (ongoing wargames platform)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section-dark edu-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 04</span>
+        <h2>Education</h2>
+      </div>
+      <div class="edu-card">
+        <div class="edu-left">
+          <div class="edu-year">2023 — 2027</div>
+          <div class="edu-badge">B.Tech</div>
+        </div>
+        <div class="edu-right">
+          <h3>Computer Science & Engineering</h3>
+          <p class="edu-spec">Specialization: Cyber Security</p>
+          <p class="edu-uni">Jeppiaar University</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 05</span>
+        <h2>Let's Connect</h2>
+      </div>
+      <p class="contact-sub">Open to internships, collaborations and cybersecurity projects.</p>
+      <div class="contact-links">
+        <a href="mailto:urekhayalamanchi@gmail.com" class="contact-card">
+          <span class="cc-icon">✉</span>
+          <div>
+            <p class="cc-label">Email</p>
+            <p class="cc-value">urekhayalamanchi@gmail.com</p>
+          </div>
+        </a>
+        <a href="tel:+919014627342" class="contact-card">
+          <span class="cc-icon">📞</span>
+          <div>
+            <p class="cc-label">Phone</p>
+            <p class="cc-value">+91-9014627342</p>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/urekha-yalamanchi" target="_blank" class="contact-card">
+          <span class="cc-icon">in</span>
+          <div>
+            <p class="cc-label">LinkedIn</p>
+            <p class="cc-value">urekha-yalamanchi</p>
+          </div>
+        </a>
+        <a href="https://github.com/urekha7314" target="_blank" class="contact-card">
+          <span class="cc-icon">⌥</span>
+          <div>
+            <p class="cc-label">GitHub</p>
+            <p class="cc-value">urekha7314</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Designed & built by <span class="accent">Urekha Yalamanchi</span> · 2025</p>
+    <p class="footer-sub">Cybersecurity · Ethical Hacking · Network Security</p>
+  </footer>
+
+  <script>
+    // Cursor glow
+    const glow = document.getElementById('cursorGlow');
+    document.addEventListener('mousemove', e => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = e.clientY + 'px';
+    });
+
+    // Typewriter
+    const roles = ['Cybersecurity Student', 'Ethical Hacker', 'Network Security Enthusiast', 'CTF Player'];
+    let ri = 0, ci = 0, deleting = false;
+    const tw = document.getElementById('typewriter');
+    function type() {
+      const word = roles[ri];
+      if (!deleting) {
+        tw.textContent = word.slice(0, ++ci);
+        if (ci === word.length) { deleting = true; setTimeout(type, 1800); return; }
+      } else {
+        tw.textContent = word.slice(0, --ci);
+        if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; }
+      }
+      setTimeout(type, deleting ? 60 : 90);
+    }
+    type();
+
+    // Scroll reveal
+    const cards = document.querySelectorAll('.skill-card, .project-card, .cert-item, .achievement-item, .contact-card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    cards.forEach(c => observer.observe(c));
+
+    // Hamburger
+    const ham = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    ham.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
+</body>
+</html>
